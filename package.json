@@ -1,10 +1,18 @@
 {
   "name": "nuxt-styled-components",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Visual primitives for the component age. A simple port of styled-components 💅 for Vue",
   "main": "lib/index.js",
   "module": "dist/nuxt-styled-components.es.js",
+  "author": "Apax",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Magento-Headless/nuxt-styled-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magento-Headless/nuxt-styled-components.git"
+  },
   "scripts": {
     "build": "npm run build:lib && npm run build:dist",
     "prebuild:lib": "rm -rf lib/*",
