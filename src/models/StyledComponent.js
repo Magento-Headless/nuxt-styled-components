@@ -72,9 +72,11 @@ export default (ComponentStyle) => {
       },
       computed: {
         generatedClassName () {
-          const { context, attrs } = this
+          const { context, attrs, $options } = this
+          const componentTag = $options._componentTag
           const componentProps = { ...context, ...attrs }
-          return this.generateAndInjectStyles(componentProps)
+
+          return `${componentTag} ${this.generateAndInjectStyles(componentProps)}`
         },
         theme () {
           return this.$theme()
