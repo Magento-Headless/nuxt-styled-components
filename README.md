@@ -12,9 +12,17 @@ yarn add nuxt-styled-components
 
 Utilising tagged template literals (a recent addition to JavaScript) and the power of CSS allows you to write actual CSS code to style your components. It also removes the mapping between components and styles – using components as a low-level styling construct could not be easier!
 
-*This is a (not fully-featured)fork from original styled-components made by [Glen Maddern](https://twitter.com/glenmaddern) and [Max Stoiber](https://twitter.com/mxstbr), supported by [Front End Center](https://frontend.center) and [Thinkmill](http://thinkmill.com.au/). Thank you for making this project possible!*
-
 ## Usage
+> Use ssr rendering for nuxtjs: ( layouts/default.vue )
+
+```JS
+import { ServerSideRenderMixin } from 'nuxt-styled-components'
+
+export default {
+  mixins: [ServerSideRenderMixin]
+}
+```
+
 
 > Register first your component locally (see https://vuejs.org/v2/guide/components.html#Local-Registration)
 
